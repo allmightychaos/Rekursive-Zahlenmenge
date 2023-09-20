@@ -14,15 +14,15 @@ Erstellen Sie die zwei Klassen Set und Node und implementieren Sie in der Klasse
 - [X] Set range(int from, int to) liefert alle Zahlen, die im Bereich zwischen from und to liegen, als neue Menge (Bereichsgrenzen jeweils eingeschlossen >=, <=)
 Beispiel: Gegeben sind die Mengen s1 und s2:
 
-s1:                   { -9 -5 -4 -3 0 2 4 10 }
-s2:                   { -5 -3 0 1 2 7 9 }
+s1:&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;{ -9 -5 -4 -3 0 2 4 10 } <br/>
+s2:&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;{ -5 -3 0 1 2 7 9 } <br/>
 Folgende Operationen auf diesen Mengen s1 und s2 sollen folgende Ergebnisse liefern:
 
-s1.union(s2):         { -9 -5 -4 -3 0 1 2 4 7 9 10 }
-s1.intersect(s2):     { -5 -3 0 2 }
-s1.range(0, 10):      { 0 2 4 10 }
-s2.range(-10, 0):     { -5 -3 0 }
-s2.remove(0):         { -5 -3 1 2 7 9 }
-s2.remove(2):         { -5 -3 1 7 9 }
-s1.intersect(s2):     { -5 -3 }
-s1.diff(s2):          { -9 -4 0 2 4 10 }
+s1.union(s2):&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;{ -9 -5 -4 -3 0 1 2 4 7 9 10 } <br/>
+s1.intersect(s2):&ensp;&ensp;&ensp;&ensp;&ensp;{ -5 -3 0 2 } <br/>
+s1.range(0, 10):&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;{ 0 2 4 10 } <br/>
+s2.range(-10, 0):&ensp;&ensp;&ensp;&ensp;&ensp;{ -5 -3 0 } <br/>
+s2.remove(0):&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;{ -5 -3 1 2 7 9 } <br/>
+s2.remove(2):&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;{ -5 -3 1 7 9 } <br/>
+s1.intersect(s2):&ensp;&ensp;&ensp;&ensp;&ensp;{ -5 -3 } <br/>
+s1.diff(s2):&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;{ -9 -4 0 2 4 10 } <br/>
