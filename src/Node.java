@@ -120,7 +120,27 @@ public class Node {
         }
     }
 
-//    public void diff(Set s2) {}
+    public void diff(Node root, Set s3) {
+        if (!root.get(value)) {
+            s3.set(value);
+        }
+        if (left != null) {
+            left.diff(root, s3);
+        }
+        if (right != null) {
+            right.diff(root, s3);
+        }
+    }
 
-//    public void range(int from, int to) {}
+    public void range(int from, int to, Set s3) {
+        if (value >= from && value <= to) {
+            s3.set(value);
+        }
+        if (left != null) {
+            left.range(from, to, s3);
+        }
+        if (right != null) {
+            right.range(from, to, s3);
+        }
+    }
 }
