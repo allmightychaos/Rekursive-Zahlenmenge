@@ -46,6 +46,14 @@ public class Set {
         System.out.println();
     }
 
+    public Set intersect(Set s) {
+        Set res = new Set();
+        if (root != null) {
+            root.intersect(s.root, res);
+        }
+        return res;
+    }
+
     public static void main(String[] args) {
         Set s = new Set();
 
@@ -56,11 +64,21 @@ public class Set {
 //        System.out.println(s.get(12));
 //        System.out.println(s.size());
 
-        s.print();
-        s.remove(5);
-        s.print();
+//        s.print();
+//        s.remove(5);
+//        s.print();
 
-        Set copy = s.clone();
-        copy.print();
+//        Set copy = s.clone();
+//        copy.print();
+
+        Set s2 = new Set();
+        s2.set(3);
+        s2.set(5);
+        s2.set(7);
+
+        Set s3 = s.intersect(s2);
+        s.print();
+        s2.print();
+        s3.print();
     }
 }

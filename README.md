@@ -6,8 +6,8 @@ Erstellen Sie die zwei Klassen Set und Node und implementieren Sie in der Klasse
 - [X] boolean get(int val) prüft ob eine Zahl in der Menge enthalten ist
 - [X] int size() liefert die Anzahl der Zahlen in der Menge
 - [X] void remove(int val) entfernt eine Zahl aus der Menge
-- [] Set clone() liefert eine Kopie der Menge als neue Menge
-- [] void print() gibt eine Menge auf der Kommandozeile aus
+- [X] Set clone() liefert eine Kopie der Menge als neue Menge
+- [X] void print() gibt eine Menge auf der Kommandozeile aus
 - [] Set intersect(Set s) liefert Schnittmenge aus this und s als neue Menge
 - [] Set union(Set s) liefert Vereinigungsmenge aus this und s als neue Menge
 - [] Set diff(Set s) liefert Mengendifferenz aus this und s als neue Menge

@@ -107,4 +107,16 @@ public class Node {
             right.print();
         }
     }
+
+    public void intersect(Node root, Set res) {
+        if (root.get(value)) {
+            res.set(value);
+        }
+        if (left != null) {
+            left.intersect(root, res);
+        }
+        if (right != null) {
+            right.intersect(root, res);
+        }
+    }
 }
