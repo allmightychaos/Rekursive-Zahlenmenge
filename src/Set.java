@@ -46,12 +46,12 @@ public class Set {
         System.out.println();
     }
 
-    public Set intersect(Set s) {
-        Set res = new Set();
+    public Set intersect(Set s2) {
+        Set s3 = new Set();
         if (root != null) {
-            root.intersect(s.root, res);
+            root.intersect(s2.root, s3);
         }
-        return res;
+        return s3;
     }
 
     public static void main(String[] args) {

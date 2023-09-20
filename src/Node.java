@@ -108,15 +108,15 @@ public class Node {
         }
     }
 
-    public void intersect(Node root, Set res) {
-        if (root.get(value)) {
-            res.set(value);
+    public void intersect(Node s2, Set s3) {
+        if (s2.get(value)) {
+            s3.set(value);
         }
         if (left != null) {
-            left.intersect(root, res);
+            left.intersect(s2, s3);
         }
         if (right != null) {
-            right.intersect(root, res);
+            right.intersect(s2, s3);
         }
     }
 }
