@@ -119,4 +119,8 @@ public class Node {
             right.intersect(s2, s3);
         }
     }
+
+//    public void diff(Set s2) {}
+
+//    public void range(int from, int to) {}
 }

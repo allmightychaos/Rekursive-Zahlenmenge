@@ -54,6 +54,21 @@ public class Set {
         return s3;
     }
 
+    public Set union(Set s2) {
+        Set s3 = new Set();
+        if (root != null) {
+            root.fill(s3);
+        }
+        if (s2.root != null) {
+            s2.root.fill(s3);
+        }
+        return s3;
+    }
+
+//    public Set diff(Set s2) {}
+
+//    public Set range(int from, int to) {}
+
     public static void main(String[] args) {
         Set s = new Set();
 
@@ -77,8 +92,11 @@ public class Set {
         s2.set(7);
 
         Set s3 = s.intersect(s2);
+        Set s4 = s.union(s2);
+
         s.print();
         s2.print();
         s3.print();
+        s4.print();
     }
 }
