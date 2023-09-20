@@ -8,10 +8,10 @@ Erstellen Sie die zwei Klassen Set und Node und implementieren Sie in der Klasse
 - [X] void remove(int val) entfernt eine Zahl aus der Menge
 - [X] Set clone() liefert eine Kopie der Menge als neue Menge
 - [X] void print() gibt eine Menge auf der Kommandozeile aus
-- [] Set intersect(Set s) liefert Schnittmenge aus this und s als neue Menge
-- [] Set union(Set s) liefert Vereinigungsmenge aus this und s als neue Menge
-- [] Set diff(Set s) liefert Mengendifferenz aus this und s als neue Menge
-- [] Set range(int from, int to) liefert alle Zahlen, die im Bereich zwischen from und to liegen, als neue Menge (Bereichsgrenzen jeweils eingeschlossen >=, <=)
+- [X] Set intersect(Set s) liefert Schnittmenge aus this und s als neue Menge
+- [X] Set union(Set s) liefert Vereinigungsmenge aus this und s als neue Menge
+- [X] Set diff(Set s) liefert Mengendifferenz aus this und s als neue Menge
+- [X] Set range(int from, int to) liefert alle Zahlen, die im Bereich zwischen from und to liegen, als neue Menge (Bereichsgrenzen jeweils eingeschlossen >=, <=)
 Beispiel: Gegeben sind die Mengen s1 und s2:
 
 s1:                   { -9 -5 -4 -3 0 2 4 10 }
