@@ -31,9 +31,19 @@ public class Set {
         }
     }
 
-    @Override
-    public String toString() {
-         return "" + (root == null ? "" : root);
+    public Set clone() {
+        Set res = new Set();
+        if (root != null) {
+            root.fill(res);
+        }
+        return res;
+    }
+
+    public void print() {
+        if (root != null) {
+            root.print();
+        }
+        System.out.println();
     }
 
     public static void main(String[] args) {
@@ -46,8 +56,11 @@ public class Set {
 //        System.out.println(s.get(12));
 //        System.out.println(s.size());
 
-        System.out.println(s);
+        s.print();
         s.remove(5);
-        System.out.println(s);
+        s.print();
+
+        Set copy = s.clone();
+        copy.print();
     }
 }

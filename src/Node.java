@@ -83,4 +83,28 @@ public class Node {
     public String toString() {
         return (left == null ? "" : left + " ") + value + (right == null ? "" : " " + right);
     }
+
+    public void fill(Set res) {
+        res.set(value);
+        if (left != null) {
+            left.fill(res);
+        }
+        if (right != null) {
+            right.fill(res);
+        }
+    }
+
+    public void print() {
+        if (left != null) {
+            left.print();
+            System.out.print(" ");
+        }
+
+        System.out.print(value);
+
+        if (right != null) {
+            System.out.print(" ");
+            right.print();
+        }
+    }
 }
